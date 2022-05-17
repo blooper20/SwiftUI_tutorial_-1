@@ -15,19 +15,19 @@ struct ContentView: View { // View
             VStack{
                 HStack{
                     // HStack안에 VStack을 3개 넣음
-                    MyVStackView()
-                    MyVStackView()
-                    MyVStackView()
+                    MyVStackView(isActived: $isActived) // ContentView의 isActived를 MyVStackView의 isActived로 연결
+                    MyVStackView(isActived: $isActived)
+                    MyVStackView(isActived: $isActived)
                 } // HStack
                 .padding(isActived ? 50 : 10)
-                .background(isActived ? Color.blue : Color.black) // isActived가 만약 True일 땐 배경이 파란색이고 아닐 때엔 검은색으로 설정
+                .background(isActived ? Color.yellow : Color.black) // isActived가 만약 True일 땐 배경이 파란색이고 아닐 때엔 검은색으로 설정
                 .onTapGesture { // 탭 제스쳐 추가
                     print("HStack이 클릭됨")
                     withAnimation { // 애니메이션 효과 적용
                         self.isActived.toggle() // toggle() = isActived 가 True 이면 False로 False이면 True로 변경
                     }
                 }
-                NavigationLink(destination: MyTextView() ){ // NavigationLink를 클릭하면 MyTextView()View로 넘어간다.
+                NavigationLink(destination: MyTextView(isActived: $isActived) ){ // NavigationLink를 클릭하면 MyTextView()View로 넘어간다.
                     Text("네비게이션") // 네비게이션링크에 대한 설정
                         .fontWeight(.heavy)
                         .font(.system(size: 40))

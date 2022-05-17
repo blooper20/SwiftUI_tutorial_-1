@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct MyTextView: View {
+    @Binding // 데이터를 연동시킨다
+    var isActived: Bool
+    
+    init(isActived: Binding<Bool> = // 생성자
+        .constant(false)) { // 기본값을 false로 설정
+            _isActived = isActived
+        }
     @State  // 값의 변화를 감지 -> 뷰에 적용
     private var index: Int = 0
     private let backgroundColors = [ // 배경색 배열
@@ -23,7 +30,12 @@ struct MyTextView: View {
             Text("배경 아이템 인덱스 \(self.index)")
                 .font(.system(size: 30))
                 .fontWeight(.bold)
-                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity) // frame으로 꽉채운다.
+                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 100) // frame으로 꽉채운다.
+            Text("활성화 상태: \(String(isActived))")
+                .font(.system(size: 30))
+                .fontWeight(.bold)
+                .foregroundColor(self.isActived ? Color.yellow : Color.gray) // isActived가 true이면 Text의 폰트색을 노란색으로 하고 false이면 회색으로 지정
+                .background(Color.black)
             Spacer() // Text("배경 아이템 인덱스") 아래의 공간을 채워준다.
         }
         .background(backgroundColors[index]) // background의 색을 backgroundColors 배열 안에 있는 색으로 지정
