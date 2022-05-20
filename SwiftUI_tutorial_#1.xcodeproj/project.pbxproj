@@ -13,6 +13,8 @@
 		D018A417282E57E000C8107D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D018A416282E57E000C8107D /* Preview Assets.xcassets */; };
 		D018A41E282E68CA00C8107D /* MyVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D018A41D282E68CA00C8107D /* MyVStack.swift */; };
 		D018A4202830E03300C8107D /* MyTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D018A41F2830E03300C8107D /* MyTextView.swift */; };
+		D062AFC728379B2500BC22D8 /* MyWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D062AFC628379B2500BC22D8 /* MyWebView.swift */; };
+		D062AFCA2837A0FF00BC22D8 /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D062AFC92837A0FF00BC22D8 /* ContentView2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,9 @@
 		D018A416282E57E000C8107D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D018A41D282E68CA00C8107D /* MyVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVStack.swift; sourceTree = "<group>"; };
 		D018A41F2830E03300C8107D /* MyTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextView.swift; sourceTree = "<group>"; };
+		D062AFC628379B2500BC22D8 /* MyWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWebView.swift; sourceTree = "<group>"; };
+		D062AFC828379B9B00BC22D8 /* SwiftUI-tutorial--1-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SwiftUI-tutorial--1-Info.plist"; sourceTree = SOURCE_ROOT; };
+		D062AFC92837A0FF00BC22D8 /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +60,15 @@
 		D018A40E282E57D900C8107D /* SwiftUI_tutorial_#1 */ = {
 			isa = PBXGroup;
 			children = (
+				D062AFC828379B9B00BC22D8 /* SwiftUI-tutorial--1-Info.plist */,
 				D018A40F282E57D900C8107D /* SwiftUI_tutorial__1App.swift */,
 				D018A411282E57D900C8107D /* ContentView.swift */,
+				D062AFC92837A0FF00BC22D8 /* ContentView2.swift */,
 				D018A413282E57E000C8107D /* Assets.xcassets */,
 				D018A415282E57E000C8107D /* Preview Content */,
 				D018A41D282E68CA00C8107D /* MyVStack.swift */,
 				D018A41F2830E03300C8107D /* MyTextView.swift */,
+				D062AFC528379AB200BC22D8 /* WebView */,
 			);
 			path = "SwiftUI_tutorial_#1";
 			sourceTree = "<group>";
@@ -71,6 +79,14 @@
 				D018A416282E57E000C8107D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D062AFC528379AB200BC22D8 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				D062AFC628379B2500BC22D8 /* MyWebView.swift */,
+			);
+			path = WebView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +161,8 @@
 			files = (
 				D018A412282E57D900C8107D /* ContentView.swift in Sources */,
 				D018A4202830E03300C8107D /* MyTextView.swift in Sources */,
+				D062AFC728379B2500BC22D8 /* MyWebView.swift in Sources */,
+				D062AFCA2837A0FF00BC22D8 /* ContentView2.swift in Sources */,
 				D018A410282E57D900C8107D /* SwiftUI_tutorial__1App.swift in Sources */,
 				D018A41E282E68CA00C8107D /* MyVStack.swift in Sources */,
 			);
@@ -278,6 +296,7 @@
 				DEVELOPMENT_TEAM = 585F6TK5A8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-tutorial--1-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -307,6 +326,7 @@
 				DEVELOPMENT_TEAM = 585F6TK5A8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-tutorial--1-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
