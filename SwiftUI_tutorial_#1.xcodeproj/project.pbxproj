@@ -13,6 +13,7 @@
 		D018A417282E57E000C8107D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D018A416282E57E000C8107D /* Preview Assets.xcassets */; };
 		D018A41E282E68CA00C8107D /* MyVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D018A41D282E68CA00C8107D /* MyVStack.swift */; };
 		D018A4202830E03300C8107D /* MyTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D018A41F2830E03300C8107D /* MyTextView.swift */; };
+		D062658F28421711004CD7CB /* TextContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D062658E28421711004CD7CB /* TextContentView.swift */; };
 		D062AFC728379B2500BC22D8 /* MyWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D062AFC628379B2500BC22D8 /* MyWebView.swift */; };
 		D062AFCA2837A0FF00BC22D8 /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D062AFC92837A0FF00BC22D8 /* ContentView2.swift */; };
 /* End PBXBuildFile section */
@@ -25,6 +26,7 @@
 		D018A416282E57E000C8107D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D018A41D282E68CA00C8107D /* MyVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVStack.swift; sourceTree = "<group>"; };
 		D018A41F2830E03300C8107D /* MyTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextView.swift; sourceTree = "<group>"; };
+		D062658E28421711004CD7CB /* TextContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextContentView.swift; sourceTree = "<group>"; };
 		D062AFC628379B2500BC22D8 /* MyWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWebView.swift; sourceTree = "<group>"; };
 		D062AFC828379B9B00BC22D8 /* SwiftUI-tutorial--1-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SwiftUI-tutorial--1-Info.plist"; sourceTree = SOURCE_ROOT; };
 		D062AFC92837A0FF00BC22D8 /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 		D018A40E282E57D900C8107D /* SwiftUI_tutorial_#1 */ = {
 			isa = PBXGroup;
 			children = (
+				D062658D284216CF004CD7CB /* Text */,
 				D062AFC828379B9B00BC22D8 /* SwiftUI-tutorial--1-Info.plist */,
 				D018A40F282E57D900C8107D /* SwiftUI_tutorial__1App.swift */,
 				D018A411282E57D900C8107D /* ContentView.swift */,
@@ -79,6 +82,14 @@
 				D018A416282E57E000C8107D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D062658D284216CF004CD7CB /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				D062658E28421711004CD7CB /* TextContentView.swift */,
+			);
+			path = Text;
 			sourceTree = "<group>";
 		};
 		D062AFC528379AB200BC22D8 /* WebView */ = {
@@ -163,6 +174,7 @@
 				D018A4202830E03300C8107D /* MyTextView.swift in Sources */,
 				D062AFC728379B2500BC22D8 /* MyWebView.swift in Sources */,
 				D062AFCA2837A0FF00BC22D8 /* ContentView2.swift in Sources */,
+				D062658F28421711004CD7CB /* TextContentView.swift in Sources */,
 				D018A410282E57D900C8107D /* SwiftUI_tutorial__1App.swift in Sources */,
 				D018A41E282E68CA00C8107D /* MyVStack.swift in Sources */,
 			);
