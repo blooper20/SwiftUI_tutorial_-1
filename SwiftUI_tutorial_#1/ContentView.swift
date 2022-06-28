@@ -9,43 +9,41 @@ import SwiftUI
 
 struct ContentView: View { // View
     var body: some View {
-        NavigationView{
-            HStack{
-                NavigationLink(destination: MyWebView(urlToLoad:
-                                                        "https://www.naver.com")
-                    .edgesIgnoringSafeArea(.all)) {
-                    Text("네이버")
+        NavigationView {
+            VStack{
+                Image("myImage")
+                    .frame(height: 10)
+                    .offset(y: -1100)
+                
+                CircleImageView()
+                HStack {
+                    NavigationLink(destination:
+                                    MyWebView(urlToLoad:
+                                                "https://www.youtube.com/watch?v=VBaWe1izUHM").edgesIgnoringSafeArea(.bottom)){
+                        // 웹뷰로 유튜브창을 띄우는데 밑에만 꽉차게
+                        Text("노래 들으러 가기")
                             .font(.system(size: 20))
                             .fontWeight(.bold)
-                            .padding(20)
-                            .background(Color.green)
-                            .foregroundColor(Color.white)
+                            .foregroundColor(.white)
+                            .padding()
+                            .background(Color.red)
                             .cornerRadius(20)
-                }
-                NavigationLink(destination: MyWebView(urlToLoad:
-                                                        "https://www.daum.net")
-                    .edgesIgnoringSafeArea(.all)) {
-                    Text("다음")
+                    }
+                    NavigationLink(destination:
+                                    MyWebView(urlToLoad:
+                                                "https://www.youtube.com/watch?v=xaHIBS6u4Rg").edgesIgnoringSafeArea(.bottom)){
+                        Text("영상 보러가기")
                             .font(.system(size: 20))
                             .fontWeight(.bold)
-                            .padding(20)
-                            .background(Color.blue)
-                            .foregroundColor(Color.white)
-                            .cornerRadius(20)
-                }
-                NavigationLink(destination: MyWebView(urlToLoad:
-                                                        "https://www.google.com")
-                    .edgesIgnoringSafeArea(.all)) {
-                    Text("구글")
-                            .font(.system(size: 20))
-                            .fontWeight(.bold)
-                            .padding(20)
+                            .foregroundColor(.white)
+                            .padding()
                             .background(Color.orange)
-                            .foregroundColor(Color.white)
                             .cornerRadius(20)
-                }
+                    }
+                } // HStack
+                .padding(20)
             }
-        } // NavigationView
+        }
     }
 }
 
