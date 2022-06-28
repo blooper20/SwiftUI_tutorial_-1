@@ -1,13 +1,13 @@
 //
-//  ContentView.swift
+//  TutorialVStackView.swift
 //  SwiftUI_tutorial_#1
 //
-//  Created by MacBook Air on 2022/05/13.
+//  Created by MacBook Air on 2022/06/28.
 //
 
 import SwiftUI
 
-struct ContentView: View { // View
+struct TutorialVStackView: View { // View
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             // alignment으로 정렬을 맞출 수 있다
@@ -38,8 +38,8 @@ struct ContentView: View { // View
     }
 }
 
-struct ContentView_Previews: PreviewProvider { // 프리뷰 화면을 볼수 있게함
+struct TutorialVStackView_Previews: PreviewProvider { // 프리뷰 화면을 볼수 있게함
     static var previews: some View {
-        ContentView() // ContentView를 프리뷰 화면에 띄운다.
+        TutorialVStackView() // ContentView를 프리뷰 화면에 띄운다.
     }
 }
