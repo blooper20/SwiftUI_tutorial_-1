@@ -22,6 +22,9 @@
 		D062658F28421711004CD7CB /* TextContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D062658E28421711004CD7CB /* TextContentView.swift */; };
 		D062AFC728379B2500BC22D8 /* MyWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D062AFC628379B2500BC22D8 /* MyWebView.swift */; };
 		D062AFCA2837A0FF00BC22D8 /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D062AFC92837A0FF00BC22D8 /* ContentView2.swift */; };
+		D06EA0DF28756D730078A4EA /* MyProjectCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06EA0DE28756D730078A4EA /* MyProjectCard.swift */; };
+		D06EA0E12875739F0078A4EA /* MyBasicCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06EA0E02875739F0078A4EA /* MyBasicCard.swift */; };
+		D06EA0E3287576800078A4EA /* ContentView5.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06EA0E2287576800078A4EA /* ContentView5.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		D062AFC628379B2500BC22D8 /* MyWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWebView.swift; sourceTree = "<group>"; };
 		D062AFC828379B9B00BC22D8 /* SwiftUI-tutorial--1-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SwiftUI-tutorial--1-Info.plist"; sourceTree = SOURCE_ROOT; };
 		D062AFC92837A0FF00BC22D8 /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
+		D06EA0DE28756D730078A4EA /* MyProjectCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProjectCard.swift; sourceTree = "<group>"; };
+		D06EA0E02875739F0078A4EA /* MyBasicCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBasicCard.swift; sourceTree = "<group>"; };
+		D06EA0E2287576800078A4EA /* ContentView5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView5.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,7 @@
 				D062AFC92837A0FF00BC22D8 /* ContentView2.swift */,
 				D057A73E286AE1E6008C5C87 /* ContentView3.swift */,
 				D057A742286AF362008C5C87 /* ContentView4.swift */,
+				D06EA0E2287576800078A4EA /* ContentView5.swift */,
 				D018A413282E57E000C8107D /* Assets.xcassets */,
 				D062658D284216CF004CD7CB /* Text */,
 				D018A415282E57E000C8107D /* Preview Content */,
@@ -90,6 +97,8 @@
 				D057A744286AF82C008C5C87 /* TutorialVStackView.swift */,
 				D057A746286AF8A1008C5C87 /* TutorialHStackView.swift */,
 				D057A748286AFDEB008C5C87 /* TutorialZStackView.swift */,
+				D06EA0DE28756D730078A4EA /* MyProjectCard.swift */,
+				D06EA0E02875739F0078A4EA /* MyBasicCard.swift */,
 			);
 			path = "SwiftUI_tutorial_#1";
 			sourceTree = "<group>";
@@ -189,11 +198,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D057A747286AF8A1008C5C87 /* TutorialHStackView.swift in Sources */,
+				D06EA0E12875739F0078A4EA /* MyBasicCard.swift in Sources */,
 				D057A73D286AD2F1008C5C87 /* CircleImageView.swift in Sources */,
 				D018A412282E57D900C8107D /* ContentView.swift in Sources */,
+				D06EA0DF28756D730078A4EA /* MyProjectCard.swift in Sources */,
 				D018A4202830E03300C8107D /* MyTextView.swift in Sources */,
 				D057A743286AF362008C5C87 /* ContentView4.swift in Sources */,
 				D057A745286AF82C008C5C87 /* TutorialVStackView.swift in Sources */,
+				D06EA0E3287576800078A4EA /* ContentView5.swift in Sources */,
 				D062AFC728379B2500BC22D8 /* MyWebView.swift in Sources */,
 				D057A749286AFDEC008C5C87 /* TutorialZStackView.swift in Sources */,
 				D062AFCA2837A0FF00BC22D8 /* ContentView2.swift in Sources */,

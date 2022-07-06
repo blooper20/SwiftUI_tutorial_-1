@@ -9,32 +9,26 @@ import SwiftUI
 
 struct ContentView: View { // View
     var body: some View {
-        VStack(alignment: .leading, spacing: 0) {
-            // alignment으로 정렬을 맞출 수 있다
-            // spacing으로 stack간의 간격을 띄울 수 있다.
-            Divider()
-                .opacity(0)
-            // Divider로 스택의 정렬을 더욱 효과적으로 해주고 투명도를 0 으로 설정하여 구분 선이 보이지 않게 처리
-
-            Text("글자")
-                .font(.system(size: 30))
-                .fontWeight(.heavy)
-            Rectangle()
-                .frame(width: 100, height: 100)
-                .foregroundColor(.red)
-            Rectangle()
-                .frame(width: 100, height: 100)
-                .foregroundColor(.yellow)
-            Spacer()
-                .frame(height: 50)
-            Rectangle()
-                .frame(width: 100, height: 100)
-                .foregroundColor(.blue)
+        ZStack(alignment: .bottomTrailing){ // .bottomTrailing :쌓이는 버튼을 오른쪽 아래로 설정함
+            VStack{
+                MyProjectCard()
+                MyBasicCard()
+                MyBasicCard()
+                MyBasicCard()
+                MyBasicCard()
+            }
+            .padding()
+            Circle()
+                .foregroundColor(Color.yellow)
+                .frame(width: 60, height: 60)
+                .overlay(
+                    Image(systemName: "plus")
+                        .font(.system(size: 30))
+                        .foregroundColor(Color.white))
+                .padding(.trailing, 10)
+                .shadow(radius: 20)
+            
         }
-//        .edgesIgnoringSafeArea(.all)
-        .frame(width: 300)
-        .background(Color.green)
-        
     }
 }
 
